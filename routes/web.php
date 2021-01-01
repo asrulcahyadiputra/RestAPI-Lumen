@@ -17,4 +17,4 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('pelanggan', 'Pelanggan@getAll');
+$router->get('customer', 'Customers@all');

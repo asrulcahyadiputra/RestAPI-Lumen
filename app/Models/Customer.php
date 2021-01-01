@@ -1,12 +1,10 @@
-<?php
-
+<?php   
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MPelanggans extends Model
-{
-    protected $table = "m_pelanggan";
+class Customer extends Model{
+    protected $table = "customers";
 
     // protected $fillable = [];
 
