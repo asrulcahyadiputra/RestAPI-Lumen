@@ -16,4 +16,13 @@ class Customers extends Controller
             'data'          => $data
         ]);
     }
+    public function select($id)
+    {
+        $data = Customer::where('customer_id', '=', $id)->first();
+
+        return response()->json([
+            'status'        => '200 OK',
+            'data'          => $data
+        ]);
+    }
 }

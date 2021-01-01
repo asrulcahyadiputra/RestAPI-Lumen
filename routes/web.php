@@ -18,3 +18,4 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('customer', 'Customers@all');
+$router->get('customer/{id}', 'Customers@select');
